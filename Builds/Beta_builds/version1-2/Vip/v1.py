@@ -6,8 +6,6 @@ from ttkthemes import ThemedStyle
 class GamessGenerator:
     def __init__(self, root):
         self.root = root
-        self.root.geometry("800x600")  # Set the window size
-        self.root.title("Gamess Input Generator")
         self.root.geometry("1600x800")  # Set the window size
         self.root.title("Gamess Input Generator")
 
@@ -133,6 +131,5 @@ class GamessGenerator:
 if __name__ == "__main__":
     root = Tk()
     app = GamessGenerator(root)
-    root.resizable(True, True)  # Allow the window to be resizable in both directions
     root.resizable(False,False)  # Allow the window to be resizable in both directions
     root.mainloop()
